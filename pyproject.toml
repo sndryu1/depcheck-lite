@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "depcheck-lite"
+version = "0.1.0"
+description = "Find unused and undeclared dependencies in JS and Python projects"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "sndryu1" }]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Software Development",
+]
+
+[project.urls]
+Homepage = "https://github.com/sndryu1/depcheck-lite"
+
+[project.scripts]
+depcheck-lite = "depcheck_lite:main"
+
+[tool.setuptools]
+py-modules = ["depcheck_lite"]

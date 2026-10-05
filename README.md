@@ -19,7 +19,14 @@ $ python depcheck_lite.py
 - `node_modules`、`venv`、`dist`、`build` などは無視
 
 ## インストール
-単一ファイルなので、ダウンロードするだけです(pip 不要)。
+```
+pip install git+https://github.com/sndryu1/depcheck-lite.git
+```
+(PyPI 公開後は `pip install depcheck-lite`)
+
+**実行ファイル(Python 不要):** [Releases](https://github.com/sndryu1/depcheck-lite/releases) から Windows / macOS / Linux 用をダウンロード。
+
+または単一ファイルだけ取得:
 ```
 curl -O https://raw.githubusercontent.com/sndryu1/depcheck-lite/main/depcheck_lite.py
 ```
