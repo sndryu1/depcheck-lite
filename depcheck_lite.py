@@ -2,7 +2,7 @@
 """depcheck-lite: find unused and undeclared dependencies in JS (package.json) and Python (requirements.txt) projects."""
 import argparse, json, os, re, sys
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 SKIP_DIRS = {".git", "node_modules", "venv", ".venv", "__pycache__", "dist", "build", ".next", "site-packages"}
 JS_EXT = (".js", ".jsx", ".mjs", ".cjs", ".ts", ".tsx", ".vue", ".svelte")
 JS_IMPORT = re.compile(r"""(?:from\s*|require\s*\(\s*|import\s*\(\s*|import\s+)['"]([^'"]+)['"]""")
